@@ -39,7 +39,7 @@ jobs:
     - name: Instala as dependências
       run: composer install --prefer-dist --no-progress
 
-    # Faz o build do site na pasta temporária output_prod.
+    # Faz o build do site na pasta temporária.
     - name: Gerar os arquivos estáticos
       run: vendor/bin/jigsaw build production
 
